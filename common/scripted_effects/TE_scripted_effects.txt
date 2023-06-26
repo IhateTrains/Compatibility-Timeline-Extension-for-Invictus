@@ -1,0 +1,53 @@
+﻿# Converts a third of a Latin province's population to Christianity.
+# scope: country
+convert_third_of_latin_province_to_christianity = {
+	random_owned_province = {
+		limit = {
+			dominant_province_culture_group = culture_group:latin
+			NOT = {
+				has_variable = roman_evangelization_toggle
+			}
+			total_population > 3
+		}
+		weight = {
+			base = 1
+			modifier = {
+				factor = 2
+				total_population > 20
+			}
+			modifier = {
+				factor = 5
+				total_population > 80
+			}
+			modifier = {
+				add = 3
+				OR = {
+					is_in_region = central_italy_region
+					is_in_region = cisalpine_gaul_region
+					is_in_region = magna_graecia_region
+				}	
+			}
+		}
+		ordered_pops_in_province = {
+			limit = {
+				NOR = {
+					pop_religion = judaism
+					pop_religion = christianity
+					pop_religion = manichaeism
+				}
+			}
+			order_by = pop_hapiness
+			max = {
+				value = total_population
+				divide = 3
+			}
+			check_range_bounds = no
+			set_pop_religion = christianity
+		}
+		set_variable = {
+			name = roman_evangelization_toggle
+			value = this
+			days = 1080
+		}
+	}
+}
