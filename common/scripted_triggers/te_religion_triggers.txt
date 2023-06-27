@@ -148,3 +148,15 @@ is_province_in_spain_or_gaul_trigger = {  # TODO: check if illyria_region and ma
 		is_in_region = magna_graecia_region
 	}
 }
+
+# scope: province
+is_province_in_media_persia_parthia_or_bactria_trigger = {
+	OR = {
+		is_in_region = mesopotamia_region
+		is_in_region = persis_region
+		is_in_region = media_region
+		is_in_region = bactriana_region
+		is_in_region = parthia_region
+		is_in_region = mauretainia_region
+	}
+}

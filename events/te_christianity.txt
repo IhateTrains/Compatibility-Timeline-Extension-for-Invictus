@@ -1164,17 +1164,7 @@ te_christianity.93 = {
 		current_date > 890.09.08
 		has_global_variable = christianity_expands
 		any_owned_province = {
-			OR = {
-				is_in_region = mesopotamia_region
-				is_in_region = persis_region
-				###Invictus v1.6 map#######
-				#is_in_area = harmozeia_area
-				###########################
-				is_in_region = media_region
-				is_in_region = bactriana_region
-				is_in_region = parthia_region
-				is_in_region = mauretainia_region
-			}
+			is_province_in_media_persia_parthia_or_bactria_trigger = yes
 			NOR = {
 				has_province_modifier = early_christian_church
 				has_province_modifier = early_christian_community
@@ -1189,14 +1179,7 @@ te_christianity.93 = {
 	immediate = {
 		random_owned_province = {
 			limit = {
-				OR = {
-					is_in_region = mesopotamia_region
-					is_in_region = persis_region
-					is_in_region = media_region
-					is_in_region = bactriana_region
-					is_in_region = parthia_region
-					is_in_region = mauretainia_region
-				}
+				is_province_in_media_persia_parthia_or_bactria_trigger = yes
 				any_pops_in_province = {
 					NOR = { 
 						pop_religion = christianity 
@@ -1354,8 +1337,6 @@ te_christianity.95 = {
 	hidden = yes
 	
 	#left_portrait = current_ruler
-	
-	#
 	
 	trigger = {
 		has_global_variable = christianity_expands
