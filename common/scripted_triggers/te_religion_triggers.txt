@@ -128,3 +128,23 @@ deity_is_christian_trigger = {
 deity_is_not_christian_trigger = {
     deity_is_christian_trigger = no
 }
+
+# scope: province
+is_province_in_spain_or_gaul_trigger = {  # TODO: check if illyria_region and magna_graecia_region are correct, also check if name is fitting
+	OR = {
+		OR = {
+			is_in_region = central_gaul_region
+			AND = {
+				is_in_area = parisia_area 
+				any_neighbor_province = {
+					dominant_province_religion = christianity
+				} 
+			}
+		}		
+		is_in_region = baetica_region
+		is_in_region = contestania_region
+		is_in_region = gallaecia_region
+		is_in_region = illyria_region
+		is_in_region = magna_graecia_region
+	}
+}

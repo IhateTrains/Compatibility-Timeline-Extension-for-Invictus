@@ -1084,22 +1084,7 @@ te_christianity.92 = {
 		current_date > 930.09.30
 		has_global_variable = christianity_expands
 		any_owned_province = {
-			OR = {
-				OR = {
-					is_in_region = central_gaul_region
-					AND = {
-						is_in_area = parisia_area 
-						any_neighbor_province = {
-							dominant_province_religion = christianity
-						} 
-					}
-				}		
-				is_in_region = baetica_region
-				is_in_region = contestania_region
-				is_in_region = gallaecia_region
-				is_in_region = illyria_region
-				is_in_region = magna_graecia_region
-			}
+			is_province_in_spain_or_gaul_trigger = yes
 			NOR = {
 				has_province_modifier = early_christian_church
 				has_province_modifier = early_christian_community
@@ -1114,22 +1099,7 @@ te_christianity.92 = {
 	immediate = {
 		random_owned_province = {
 			limit = {
-				OR = {
-					OR = {
-						is_in_region = central_gaul_region
-						AND = {
-							is_in_area = parisia_area 
-							any_neighbor_province = {
-								dominant_province_religion = christianity
-							} 
-						}
-					}
-					is_in_region = baetica_region
-					is_in_region = contestania_region
-					is_in_region = gallaecia_region
-					is_in_region = illyria_region
-					is_in_region = magna_graecia_region
-				}
+				is_province_in_spain_or_gaul_trigger = yes
 				any_pops_in_province = {
 					NOR = { 
 						pop_religion = christianity 
