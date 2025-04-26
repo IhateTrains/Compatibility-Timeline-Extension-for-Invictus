@@ -226,6 +226,7 @@ l6_christian.3 = {
 			}
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					OR = {
 						total_population > 80
 						AND = {
@@ -331,6 +332,8 @@ l6_christian.5 = {
 		NOR = {
 			religion = manichaeism
 			religion = christianity
+			has_variable = medium_xian_kerygma_target
+			has_variable = small_xian_kerygma_target
 		}
 		NAND = {
 			is_ai = yes
@@ -352,14 +355,16 @@ l6_christian.5 = {
 				is_in_region = venedia_region
 				is_in_region = germania_region
 				is_in_region = germania_superior_region
-				# Vanilla for bohemia_region # is_in_region = bohemia_area
-				is_in_region = bohemia_region
+				is_in_region = bohemia_area
 				is_in_region = vistulia_region
 				is_in_region = borysthenia_region
 				is_in_region = tibet_region
 				###Invictus v1.6###########
 				is_in_region = burma_region
 				is_in_region = central_asian_steppes_region
+				####Invictus v1.8########
+				is_in_region = hyperborea_region
+				#################################
 				dominant_province_religion = christianity
 			}
 			OR = {
@@ -386,14 +391,16 @@ l6_christian.5 = {
 					is_in_region = venedia_region
 					is_in_region = germania_region
 					is_in_region = germania_superior_region
-					# Vanilla for bohemia_region # is_in_region = bohemia_area
-					is_in_region = bohemia_region
+					is_in_region = bohemia_area
 					is_in_region = vistulia_region
 					is_in_region = borysthenia_region
 					is_in_region = tibet_region
 					###Invictus v1.6###########
 					is_in_region = burma_region
 					is_in_region = central_asian_steppes_region
+					####Invictus v1.8###############
+					is_in_region = hyperborea_region
+					################################
 					dominant_province_religion = christianity
 				}
 				OR = {
@@ -430,6 +437,30 @@ l6_christian.5 = {
 				}
 				check_range_bounds = no
 				set_pop_religion = christianity
+			}
+		}
+	}
+
+	after = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities >= 25
+				}
+			}
+			set_variable = {
+				name = medium_xian_kerygma_target
+				days = 726 
+			}	
+		}
+		else_if = {
+			limit = {
+				num_of_cities < 25
+			}
+			set_variable = {
+				name = small_xian_kerygma_target
+				days = 1452
 			}
 		}
 	}

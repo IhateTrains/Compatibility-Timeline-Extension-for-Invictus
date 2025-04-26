@@ -1,6 +1,8 @@
 ﻿l_french:
- barbarian_fury_discipline:0 "Tenace"
- barbarian_fury_rage:0 "Furieux"
+ barbarian_fury_discipline_1:0 "Tenace"
+ barbarian_fury_rage_1:0 "Furieux"
+ barbarian_fury_discipline_2:0 "Tenace"
+ barbarian_fury_rage_2:0 "Furieux"
  barbarian_invasion_skirmish:0 "Migrations des barbares"
  barbarian_invasion_war:0 "Les barbares nous envahissent !"
 
@@ -13,6 +15,11 @@
 
  germanisch_wanderung:0 "Grandes invasions"
 
+ teinv_hyperborean_winter:0 "Manque hyperboréen"
+ desc_teinv_hyperborean_winter:1 "Les conditions difficiles de cette nature sauvage frontalière se font sentir ici."
+
+ ai_constantinople_capital:0 "Nova Roma"
+
  #######CULTURE#######:0 ""
  hunnic:0 "Hunnique"
  huna:0 "Huna"
@@ -22,6 +29,12 @@
 
  manichaeism:0 "Manichéen"
  desc_manichaeism:0 "Le manichéisme enseignait une cosmologie dualiste élaborée décrivant la lutte entre un monde de lumière, bon et spirituel, et un monde des ténèbres, mauvais et matériel. Par un processus continu qui se déroule dans l'histoire de l'humanité, la lumière est progressivement retirée du monde de la matière et renvoyée au monde de la lumière, d'où elle est venue. Ses croyances étaient fondées sur les mouvements religieux mésopotamiens locaux et sur le gnosticisme."
+
+ hunnic_huna_animism:0 "ritualiste"
+ desc_hunnic_huna_animism:0 "Représentant tout un ensemble de croyances diverses et de religions populaires, le ritualisme comprend entre autres un culte des ancêtres, un aspect animiste et des offrandes votives."
+
+ convert_to_hunnic_huna_animism:0 "Adopter les traditions ritualistes"
+ convert_to_hunnic_huna_animism_desc:0 "L'animisme et le culte des ancêtres sont devenus un élément important des cérémonies [COUNTRY.GetAdjective] ces derniers temps, et nous avons vu les rites et traditions anciens côtoyer de plus en plus fréquemment ceux de la foi [COUNTRY.GetReligion.GetName]. Peut-être est-il temps donc de renoncer à des idées nouvelles pour revenir à nos traditions anciennes ?"
 
  convert_to_christian:0 "Édit d'évangélisation"
  convert_to_christian_desc:1 "Embrasser l'évangile répandu dans nos pays et décréter que le christianisme devienne la religion officielle de ce pays."
@@ -47,12 +60,31 @@
  christian_church_embelishment:0 "Cathédrale embellie"
  desc_christian_church_embelishment:0 "D'origine plutôt modeste, notre cathédrale s'est embellie grâce aux généreuses donations des fidèles chrétiens et à l'intercession de saint Pierre. Avec chaque génération qui passe, la cathédrale s'améliore et, avec le temps, son apparence peut refléter correctement le siège de l'évêque en tant que successeur des apôtres."
 
- #####PLAGUES#####:0 ""
- antonine_plague_epidemic:0 "Epidémie de peste antonine"
- desc_antonine_plague_epidemic:0 "Une épidémie d'une maladie mortelle a infecté cette province."
+ manichaean_temple:0 "Temple manichéen"
+ desc_manichaean_temple:0 "Vous avez démontré votre ouverture d'esprit aux idées religieuses diverses en permettant à la nouvelle secte des manichéens de construire un temple ici." 
 
- cyprian_plague_epidemic:0 "Épidémie de peste à Chypre"
- desc_cyprian_plague_epidemic:0 "Une maladie mortelle a infecté la population ici."
+ allowed_manichees:0 "Manichéens autorisés"
+ disallowed_manichees:0 "Manichéens interdits"
+ manichee_appreciation:0 "Appréciation manichéenne"
+ manichee_resentment:0 "Ressentiment manichéen"
+
+ #####PLAGUES#####:0 ""
+ antonine_plague_epidemic_quarantine:0 "Epidémie de peste antonine"
+ desc_antonine_plague_epidemic_quarantine:0 "Cette ville est en quarantaine pendant une pandémie mortelle."
+ cyprian_plague_epidemic_quarantine:0 "Épidémie de peste à Chypre"
+ desc_cyprian_plague_epidemic_quarantine:0 "Cette ville est en quarantaine pendant une pandémie mortelle."
+ cyprian_plague_epidemic_quarantown:0 "Épidémie de peste à Chypre"
+ desc_cyprian_plague_epidemic_quarantown:0 "Cette ville est en quarantaine pendant une pandémie mortelle."
+
+ plague_outbreak_province:0 "Épidémie de peste"
+ desc_plague_outbreak_province:0 "Une épidémie d'une maladie mortelle a infecté cette province."
+
+ antonine_plague_epidemic_outbreak_city:0 "Epidémie de peste antonine"
+ desc_antonine_plague_epidemic_outbreak_city:0 "Une maladie mortelle a infecté la population ici."
+ cyprian_plague_epidemic_outbreak_city:0 "Épidémie de peste à Chypre"
+ desc_cyprian_plague_epidemic_outbreak_city:0 "Une maladie mortelle a infecté la population ici."
+ cyprian_plague_epidemic_outbreak_town:0 "Épidémie de peste à Chypre"
+ desc_cyprian_plague_epidemic_outbreak_town:0 "Une épidémie d'une maladie mortelle a infecté cette province."
 
  #####COUNTRY MODIFIERS#####:0 ""
  cursed_by_elohim:0 "Maudit par Elohim"

@@ -1,6 +1,8 @@
 ﻿l_german:
- barbarian_fury_discipline:0 "Verbissen"
- barbarian_fury_rage:0 "Wütend"
+ barbarian_fury_discipline_1:0 "Verbissen"
+ barbarian_fury_rage_1:0 "Wütend"
+ barbarian_fury_discipline_2:0 "Verbissen"
+ barbarian_fury_rage_2:0 "Wütend"
  barbarian_invasion_skirmish:0 "Barbaren wandern"
  barbarian_invasion_war:0 "Einmarsch der Barbaren!"
 
@@ -12,6 +14,11 @@
  desc_late_antiquity_decentralization_settlement:1 "Menschen ziehen in die Siedlungen."
 
  germanisch_wanderung:0 "Völkerwanderung"
+
+ teinv_hyperborean_winter:0 "Hyperboreische Knappheit"
+ desc_teinv_hyperborean_winter:1 "Hier sind die harten Bedingungen dieser Grenzwildnis zu spüren."
+
+ ai_constantinople_capital:0 "Nova Roma"
 
  #######CULTURE#######:0 ""
  hunnic:0 "Hunnisch"
@@ -37,15 +44,21 @@
  nestorian:0 "Nestorianisch"
  desc_nestorian:0 "Auch die von der orthodoxen und römisch-katholischen Kirche oft als Nestorianer bezeichnete Assyrische Kirche des Ostens hat nie die vorgeworfenen Lehren vertreten, so dass man vom Nestorianismus lediglich als einem häresiologischen Konstrukt, nicht von einer historischen Bewegung, sprechen kann. Die miaphysitischen Kirchen haben den Nestorianismusvorwurf auch auf die Chalzedonensier, also Orthodoxe und Katholiken, ausgedehnt."
 
+ hunnic_huna_animism:0 "Ritualistisch"
+ desc_hunnic_huna_animism:0 "Der Ritualismus repräsentiert eine Vielzahl von lokalen Religionen und Volksreligionen mit Ahnenanbetung, Animismus und Votivgaben."
+
+ convert_to_hunnic_huna_animism:0 "Ritualistische Traditionen fördern"
+ convert_to_hunnic_huna_animism_desc:0 "Der Animismus und die Ahnenverehrung sind in letzter Zeit zu einem wichtigen Bestandteil der [COUNTRY.GetAdjective]en religiösen Zeremonien geworden und zusätzlich zu unserem Glauben an [COUNTRY.GetReligion.GetName] haben wir alte Rituale und Traditionen aufkommen sehen. Vielleicht ist es an der Zeit, dass auch wir einige dieser neueren Ideenannehmen und zu unserem alten Erbe zurückkehren?"
+
  convert_to_christian:0 "Edikt der Evangelisierung"
  convert_to_christian_desc:1 "Nehmen Sie das Evangelium an, das in unseren Ländern verbreitet ist, und dekretieren Sie, dass das Christentum die offizielle Religion dieses Landes wird."
 
- small_religion_in_country_tooltip:0 "Mindestens 10% der Bevölkerung von [SCOPE.GetRootScope.GetCountry.GetName] folgen dieser Religion.
+ small_religion_in_country_tooltip:0 "Mindestens 10% der Bevölkerung von [SCOPE.GetRootScope.GetCountry.GetName] folgen dieser Religion."
 
  convert_to_manichaean:0 "Manichäismus wahrnehmen"
  convert_to_manichaean_desc:1 "Studieren Sie die gnostischen Texte, bewegt durch das Leben und die Schriften von Mani, dem letzten wiedergeborenen Propheten der großen Weltreligionen, gereinigt von Korruption, und widmen Sie das Reich dieser neuen Erleuchtung."
 
- minor_religion_in_country_tooltip:0 "Mindestens 5% der Bevölkerung von [SCOPE.GetRootScope.GetCountry.GetName] folgen dieser Religion.
+ minor_religion_in_country_tooltip:0 "Mindestens 5% der Bevölkerung von [SCOPE.GetRootScope.GetCountry.GetName] folgen dieser Religion."
 
  early_christian_community:0 "Frühchristliche Gemeinde"
  desc_early_christian_community:0 "In dieser Provinz hat sich eine Gemeinschaft christlicher Gläubiger etabliert."
@@ -60,13 +73,32 @@
  
  christian_church_embelishment:0 "Verschönerte Kathedrale"
  desc_christian_church_embelishment:0 "Ursprünglich eine eher bescheidene Struktur, wurde unsere Kathedrale durch die großzügigen Spenden der christlichen Gläubigen und die Fürsprache des heiligen Petrus verschönert. Mit jeder Generation, die vergeht, wird die Kathedrale aufgewertet und mit der Zeit kann ihr Aussehen den Sitz des Bischofs als Nachfolger der Apostel angemessen widerspiegeln."
+
+ manichaean_temple:0 "Manichäischer Tempel"
+ desc_manichaean_temple:0 "Du hast deine Offenheit für verschiedene religiöse Ideen gezeigt, indem du der neuen Sekte der Manichäer erlaubt hast, hier einen Tempel zu errichten." 
+ 
+ allowed_manichees:0 "Erlaubte Manichäer"
+ disallowed_manichees:0 "Unerlaubte Manichäer"
+ manichee_appreciation:0 "Manichäische Wertschätzung"
+ manichee_resentment:0 "Manichäischer Groll"
  
  #####PLAGUES#####:0 ""
- antonine_plague_epidemic:0 "Antonine-Pest-Epidemie"
- desc_antonine_plague_epidemic:0 "Ein Ausbruch einer tödlichen Krankheit hat diese Provinz infiziert."
+ antonine_plague_epidemic_quarantine:0 "Antoninische Pestepidemie"
+ desc_antonine_plague_epidemic_quarantine:0 "Diese Stadt steht während einer tödlichen Pandemie unter Quarantäne."
+ cyprian_plague_epidemic_quarantine:0 "Cyprianische Pestepidemie"
+ desc_cyprian_plague_epidemic_quarantine:0 "Diese Stadt steht während einer tödlichen Pandemie unter Quarantäne."
+ cyprian_plague_epidemic_quarantown:0 "Cyprianische Pestepidemie"
+ desc_cyprian_plague_epidemic_quarantown:0 "Diese Stadt steht während einer tödlichen Pandemie unter Quarantäne."
 
- cyprian_plague_epidemic:0 "Cyprianische Pestepidemie"
- desc_cyprian_plague_epidemic:0 "Eine tödliche Krankheit hat die Bevölkerung hier infiziert."
+ plague_outbreak_province:0 "Ausbruch der Pest"
+ desc_plague_outbreak_province:0 "Ein Ausbruch einer tödlichen Krankheit hat diese Provinz infiziert."
+
+ antonine_plague_epidemic_outbreak_city:0 "Antoninische Pestepidemie"
+ desc_antonine_plague_epidemic_outbreak_city:0 "Eine tödliche Krankheit hat die Bevölkerung hier infiziert."
+ cyprian_plague_epidemic_outbreak_city:0 "Cyprianische Pestepidemie"
+ desc_cyprian_plague_epidemic_outbreak_city:0 "Eine tödliche Krankheit hat die Bevölkerung hier infiziert."
+ cyprian_plague_epidemic_outbreak_town:0 "Ausbruch der Cyprianische Pest"
+ desc_cyprian_plague_epidemic_outbreak_town:0 "Ein Ausbruch einer tödlichen Krankheit hat diese Provinz infiziert."
 
  #####COUNTRY MODIFIERS#####:0 ""
  cursed_by_elohim:0 "Verflucht von Elohim"

@@ -9,11 +9,15 @@ NCountry = {
 	TECH_AHEAD_OF_TIME = -0.15 #lowered from -0.12
 	TECH_BEHIND_OF_TIME = -0.15 #lowered from -0.12
 
-	CIVIL_WAR_STATES_THRESHOLD = 2
-	CIVIL_WAR_CITIES_THRESHOLD = 4
+	#CIVIL_WAR_STATES_THRESHOLD = 2
+	#CIVIL_WAR_CITIES_THRESHOLD = 4
 }
 
 NGreatWork = {	
 	#GW_BASE_CONSTRUCTION_SPEED = 1
 	GW_WORK_COST_SCALEFACTOR = 2 #raised from 1
 }	
+
+NAI = {
+	PANTHEON_STICKINESS_WEIGHT = 1.0 ##Restored vanilla value #Additive Value: Extra stickiness for currently selected deities to discourage strobing.
+}

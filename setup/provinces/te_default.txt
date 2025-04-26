@@ -1,4 +1,14 @@
-﻿#
+﻿5113=
+{
+	barbarian_power=0
+	civilization_value=0
+	culture="gothonic"
+	province_rank=""
+	religion="germanic_religion"
+	terrain="impassable_terrain"
+	trade_goods=""
+}
+#
 5140=
 {
 	barbarian_power=0
@@ -38,7 +48,7 @@
 	civilization_value=0
 	culture="huna"
 	province_rank=""
-	religion="eastern_animism"
+	religion="hunnic_huna_animism"
 	terrain="impassable_terrain"
 	trade_goods=""
 }
@@ -49,7 +59,7 @@
 	civilization_value=0
 	culture="hunnic"
 	province_rank=""
-	religion="eastern_animism"
+	religion="hunnic_huna_animism"
 	terrain="impassable_terrain"
 	trade_goods=""
 }
@@ -60,7 +70,7 @@
 	civilization_value=0
 	culture="hunnic"
 	province_rank=""
-	religion="eastern_animism"
+	religion="hunnic_huna_animism"
 	terrain="impassable_terrain"
 	trade_goods=""
 }
@@ -71,7 +81,7 @@
 	civilization_value=0
 	culture="huna"
 	province_rank=""
-	religion="eastern_animism"
+	religion="hunnic_huna_animism"
 	terrain="impassable_terrain"
 	trade_goods="silk"
 }
@@ -93,7 +103,18 @@
 	civilization_value=0
 	culture="hunnic"
 	province_rank=""
-	religion="eastern_animism"
+	religion="hunnic_huna_animism"
+	terrain="impassable_terrain"
+	trade_goods=""
+}
+#
+5981=
+{
+	barbarian_power=0
+	civilization_value=0
+	culture="hunnic"
+	province_rank=""
+	religion="hunnic_huna_animism"
 	terrain="impassable_terrain"
 	trade_goods=""
 }
@@ -104,7 +125,7 @@
 	civilization_value=0
 	culture="huna"
 	province_rank=""
-	religion="eastern_animism"
+	religion="hunnic_huna_animism"
 	terrain="impassable_terrain"
 	trade_goods=""
 }
